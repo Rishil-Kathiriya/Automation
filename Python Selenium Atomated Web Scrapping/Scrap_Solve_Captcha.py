@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from fake_useragent import UserAgent
 import time
 
+
 def get_working_proxy():
     url = 'https://free-proxy-list.net/'
     print("Scraping Free proxy list...")
