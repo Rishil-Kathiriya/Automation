@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from fake_useragent import UserAgent
 import time
 
+
 def get_working_proxy():
     url = 'https://free-proxy-list.net/'
     print("Scraping the Free proxy...")
@@ -34,12 +35,17 @@ def get_working_proxy():
                 continue
     return None
 
+
 search_element="Laptop" #input("Enter Product to Search : ")
+
 website="Amazon" #input("In Which Website You Want to Search : ")
+
 proxy = get_working_proxy()
+
 if not proxy:
     print("No working proxy found. Exiting.")
     exit()
+
 
 ua = UserAgent()
 user_agent = ua.random
@@ -85,3 +91,5 @@ except Exception as e:
 finally:
     print("Quitting The browser.")
     driver.quit()
+
+
