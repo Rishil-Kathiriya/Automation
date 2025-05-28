@@ -11,12 +11,14 @@ from time import sleep
 ua = UserAgent()
 fake_agent = ua.random
 
+
 chrome_opt = Options()
 chrome_opt.add_argument("--disable-blink-features=AutomationControlled")
 chrome_opt.add_argument("--start-maximized")
 chrome_opt.add_argument(f"user-agent={fake_agent}")
 chrome_opt.add_argument("--ignore-certificate-errors")
 chrome_opt.page_load_strategy = 'eager'
+
 
 driver = None
 try:
@@ -71,3 +73,5 @@ finally:
         except Exception as e:
             print(f"Error while quitting driver:")
         
+
+
