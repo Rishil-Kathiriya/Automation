@@ -8,8 +8,12 @@ import undetected_chromedriver as uc
 from time import sleep
 
 
+
+
 ua = UserAgent()
 fake_agent = ua.random
+
+
 
 
 chrome_opt = Options()
