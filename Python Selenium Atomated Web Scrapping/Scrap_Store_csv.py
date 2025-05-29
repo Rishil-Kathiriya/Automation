@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import os
 import pandas as pd
 
+
 d={'Product_Name':[],'Price':[],'Link':[]}
 for file in os.listdir("data"):
     try:
@@ -18,6 +19,7 @@ for file in os.listdir("data"):
 
         p=soup.find("span",attrs={"class" : 'a-price-whole'})
         price=p.get_text(strip=True)
+        
         d['Product_Name'].append(name)
         d['Price'].append(price)
         d['Link'].append(link)
