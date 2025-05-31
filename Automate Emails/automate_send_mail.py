@@ -12,7 +12,6 @@ body=list(df['Body'])
 print(len(emails),"Emails Found..")
 
 
-
 try:
     mail="YourEmail@gmail.com"     #your email
     password="#### #### #### ####"     #your email's app key
@@ -71,6 +70,7 @@ try:
 except Exception as e:
     print(e)
 
+    
 
 
 
