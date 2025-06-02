@@ -15,7 +15,7 @@ print(len(emails),"Emails Found..")
 
 try:
     mail="YourEmail@gmail.com"     #your email
-    password="#### #### #### ####"     #your email's app key
+    password="#### #### #### ####"     #your email's app key from google account
     server=sm.SMTP("smtp.gmail.com",587)
     server.starttls()
     server.login(mail,password)
@@ -72,6 +72,8 @@ except Exception as e:
     print(e)
 
     
+
+
 
 
 
