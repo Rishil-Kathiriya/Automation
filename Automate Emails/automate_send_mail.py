@@ -1,4 +1,4 @@
-import pandas as pd
+wsimport pandas as pd
 import smtplib as sm
 from email.mime.multipart import MIMEMultipart as multipart
 from email.mime.text import MIMEText as mtext
@@ -10,6 +10,7 @@ emails=list(df['Email'])
 sub=list(df['Subject'])
 body=list(df['Body'])
 print(len(emails),"Emails Found..")
+
 
 
 try:
