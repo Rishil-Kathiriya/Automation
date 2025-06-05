@@ -1,7 +1,8 @@
-wsimport pandas as pd
+import pandas as pd
 import smtplib as sm
 from email.mime.multipart import MIMEMultipart as multipart
 from email.mime.text import MIMEText as mtext
+
 
 
 
