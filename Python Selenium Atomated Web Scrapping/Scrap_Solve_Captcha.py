@@ -7,6 +7,7 @@ from fake_useragent import UserAgent
 import time
 
 
+
 def get_working_proxy():
     url = 'https://free-proxy-list.net/'
     print("Scraping Free proxy list...")
@@ -30,13 +31,13 @@ def get_working_proxy():
                 print(f"Testing proxy: {proxy}")
                 r = requests.get("https://www.amazon.com", proxies={"http": proxy, "https": proxy}, headers=headers, timeout=5)
                 if r.status_code == 200:
-                    print(f"✅ Working proxy found: {proxy}")
+                    print(f" Working proxy found: {proxy}")
                     return proxy
             except:
                 continue
     return None
 
-# Step 1: Get a working proxy
+
 search_element = "Laptop"
 website = "Amazon"
 proxy = get_working_proxy()
@@ -44,9 +45,11 @@ if not proxy:
     print("No working proxy found. Exiting.")
     exit()
 
-# Step 2: Setup Selenium with proxy and randomized user-agent
+
+
 ua = UserAgent()
 user_agent = ua.random
+
 
 chrome_options = Options()
 chrome_options.add_argument(f'--proxy-server={proxy}')
@@ -56,7 +59,8 @@ chrome_options.add_argument("--disable-blink-features=AutomationControlled")
 chrome_options.add_argument("--ignore-certificate-errors")
 chrome_options.page_load_strategy = 'eager'
 
-# Step 3: Launch browser
+
+
 driver = webdriver.Chrome(options=chrome_options)
 driver.set_page_load_timeout(20)
 
