@@ -1,6 +1,6 @@
 # 🤖 Automation Scripts – Powered by Python
 
-Welcome to the **Automation Scripts** repository — a growing collection of powerful Python-based automation tools and bots designed to save time, reduce manual effort, and supercharge your productivity.
+Welcome to the **Automation Scripts** repository — a growing collection of powerful Python-based automation tools and bots designed to save time, reduce manual effort, and supercharge your productivity. 
 
 Whether you're scraping the web, automating emails, or building playful bots like Cookie Clicker, this repo is your go-to toolbox for real-world task automation.
 
