@@ -3,6 +3,7 @@ import os
 import pandas as pd
 
 
+
 d={'Product_Name':[],'Price':[],'Link':[]}
 for file in os.listdir("data"):
     try:
@@ -26,8 +27,11 @@ for file in os.listdir("data"):
     except Exception as e:
         print(e)
 
+
+
 df=pd.DataFrame(d)
 df.to_csv("data.csv",index=False)
 print("Data Stored Successfully...")
+
 
 
