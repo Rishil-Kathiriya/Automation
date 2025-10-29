@@ -24,7 +24,6 @@ try:
 
         text = f"""
             Hi there,
-
             We hope you're doing well!
             Happy to share this its my first project..
             """
@@ -124,3 +123,4 @@ except Exception as e:
 
 # except Exception as e:
 #     print(e)
+
