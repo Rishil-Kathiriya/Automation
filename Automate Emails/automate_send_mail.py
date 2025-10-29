@@ -50,7 +50,7 @@ try:
                 </div>
             </body>
             </html>
-            """
+            """  #for testing purpose
         
         msg.attach(mtext(text, "plain"))
         msg.attach(mtext(html, "html"))
@@ -123,4 +123,5 @@ except Exception as e:
 
 # except Exception as e:
 #     print(e)
+
 
