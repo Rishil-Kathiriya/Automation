@@ -49,7 +49,7 @@ Here are some of the things these Scripts help you do:
 
 ## 🙌 Contribute
 
-Have an idea or script?  
+Have an idea or Script?  
 Feel free to **open a PR** or suggest improvements in the [issues](https://github.com/Rishil-Kathiriya/Automation/issues) section.
 
 ---
