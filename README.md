@@ -17,7 +17,7 @@ Whether you're scraping the web, automating emails, or Building playful bots lik
 
 ## 💼 Use Cases
 
-Here are some of the things these scripts help you do:
+Here are some of the things these Scripts help you do:
 
 - 🍪 **Automate games** like Cookie Clicker using Selenium  
 - 📬 **Send emails automatically** using Python + SMTP  
